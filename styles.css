@@ -1,7 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root {
 
     /* Colors */
-    --color-primary-50: rgba(151, 71, 255, 1);
+    --color-primary-50: #9747FF;
+    --color-brackground-light: #FFFFFF;
+    --color-font-grafite-light: #232323;
+    --color-font-white: #fff;
 
     /* Typography */
     --fonte: 'Inter', sans-serif;
@@ -16,6 +24,10 @@
     --padding-l: 2rem;
     --padding-xl: 3rem;
 
+}
+
+body {
+    background-color: var(--color-brackground-light);
 }
 
 section {
@@ -45,6 +57,7 @@ h1 {
     padding-top: 60px;
     padding-bottom: 24px;
     text-align: center;
+    color: var(--color-font-grafite-light);
 }
 
 span {
@@ -55,6 +68,7 @@ p {
     font-size: var(--font-size-m);
     padding-bottom: 48px;
     text-align: center;
+    color: var(--color-font-grafite-light);
 }
 
 
@@ -67,4 +81,5 @@ p {
     border-radius: 36px;
     border: none;
     color: white;
+    text-decoration: none;
 }
