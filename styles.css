@@ -60,7 +60,7 @@ h1 {
     color: var(--color-font-grafite-light);
 }
 
-span {
+h1 span {
     color: var(--color-primary-50);
 }
 
@@ -80,6 +80,6 @@ p {
     padding: 24px 48px;
     border-radius: 36px;
     border: none;
-    color: white;
+    color: var(--color-font-white);
     text-decoration: none;
 }
