@@ -1,89 +1,147 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
+  /* Colors */
+  --color-primary-50: #9747FF;
+  --color-background-light: #FFFFFF;
+  --color-font-grafite-light: #232323;
+  --color-font-white: #fff;
 
-    /* Colors */
-    --color-primary-50: #9747FF;
-    --color-brackground-light: #FFFFFF;
-    --color-font-grafite-light: #232323;
-    --color-font-white: #fff;
+  /* Typography */
+  --inter: 'Inter', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --unbounded: 'Unbounded', sans-serif;
 
-    /* Typography */
-    --inter: 'Inter', sans-serif;
-    --poppins: 'Poppins', sans-serif;
-    --unbounded: 'Unbounded', sans-serif;
+  --font-size-s: 0.875rem;
+  --font-size-b: 1rem;
+  --font-size-m: 1.5rem;
+  --font-size-l: 2rem;
+  --font-size-xl: 4rem;
 
-    --font-size-b: 1rem;
-    --font-size-m: 1.5rem;
-    --font-size-xl: 4rem;
-
-    /* Padding*/
-    --padding-b: 1rem;
-    --padding-m: 1.5rem;
-    --padding-l: 2rem;
-    --padding-xl: 3rem;
-
+  /* Padding */
+  --padding-b: 1rem;
+  --padding-m: 1.5rem;
+  --padding-l: 2rem;
+  --padding-xl: 3rem;
 }
 
 body {
-    background-color: var(--color-brackground-light);
+  background-color: var(--color-background-light);
+  font-family: var(--inter);
+  overflow-x: hidden;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: var(--padding-l);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    margin: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 2rem; 
 }
 
 .fisrt-box {
-    display: flex;
-    width: 792px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    font-family: var(--unbounded);
-    padding-top: 60px;
-    padding-bottom: 24px;
-    text-align: center;
-    color: var(--color-font-grafite-light);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  font-family: var(--unbounded);
+  text-align: center;
+  color: var(--color-font-grafite-light);
+  margin: 60px auto 24px auto;
 }
 
 h1 span {
-    color: var(--color-primary-50);
+  color: var(--color-primary-50);
 }
 
 p {
-    font-size: var(--font-size-m);
-    padding-bottom: 48px;
-    text-align: center;
-    color: var(--color-font-grafite-light);
-    font-family: var(--inter);
-    line-height: 1.8rem;
+  font-size: var(--font-size-m);
+  text-align: center;
+  color: var(--color-font-grafite-light);
+  font-family: var(--inter);
+  line-height: 1.8rem;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-
 .primary-button {
-    font-family: var(--inter);
-    font-size: var(--font-size-m);
-    font-weight: 600;
-    background-color: var(--color-primary-50);
-    padding: 24px 48px;
-    border-radius: 36px;
-    border: none;
-    color: var(--color-font-white);
-    text-decoration: none;
+  font-family: var(--inter);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  background-color: var(--color-primary-50);
+  padding: 1.5rem 3rem;
+  border-radius: 36px;
+  border: none;
+  color: var(--color-font-white);
+  text-decoration: none;
+  margin: 40px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: var(--font-size-l);
+    margin: 40px auto 16px auto;
+  }
+
+  p {
+    font-size: var(--font-size-b);
+    width: 100%;
+  }
+
+  .primary-button {
+    font-size: var(--font-size-b);
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: var(--padding-m);
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: var(--font-size-s);
+    line-height: 1.5rem;
+  }
+
+  .primary-button {
+    font-size: var(--font-size-s);
+    padding: 0.75rem 1.5rem;
+  }
 }
