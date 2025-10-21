@@ -4,7 +4,7 @@
   align-items: flex-start; 
   gap: 1rem; 
   padding: 2rem;
-  max-width: 400px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -25,9 +25,32 @@ form {
   gap: 0.25rem; 
 }
 
-label {
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+.form-group-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin: 0;
+  flex-shrink: 0;
+  transform: translateY(1px); 
+}
+
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.radio-button h2 {
+    font-size: var(--font-size-b);
+    font-weight: 600;
+    line-height: 20px;
 }
 
 input {
