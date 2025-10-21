@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Favicon1.svg" type="image/svg+xml">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1 class="form-title">Formulário</h1>
+    </header>
+    <section class="form-section">
+        <form action="" method="get">
+
+            <!-- DADOS PESSOAIS -->
+            <div class="form-group">
+            <label for="userName">Nome</label>
+            <input type="text" name="userName" required>
+            </div>
+            
+            <div class="form-group">
+            <label for="userAge">Idade</label>
+            <input type="number" name="userAge" min="18" max="100" required>
+            </div>
+
+            <div class="form-group">
+            <label for="birthDate">Data de nascimento</label>
+            <input type="date" name="birthDate">
+            </div>
+
+            <div class="form-group">
+            <label for="userEmail">Email</label>
+            <input type="email" name="userEmail">
+            </div>
+
+            <div class="form-group">
+            <label for="userPhone">Telefone</label>
+            <input type="tel" name="userPhone" placeholder="DDD + número">
+            </div>
+            
+
+            <button type="submit" >Enviar</button>
+
+
+        </form>
+    </section>
+</body>
+</html>
